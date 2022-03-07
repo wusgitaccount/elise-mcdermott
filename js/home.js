@@ -1,8 +1,7 @@
 function setup() {
-  createCanvas(3000, 3000);
+  createCanvas(windowWidth, windowHeight);
   background(255);
   noStroke();
-
 }
 
 function mousePressed() {
@@ -15,7 +14,11 @@ function draw() {
   var g = (0);
   let b = (255);
 
-  fill(r, g, b,200);
+  fill(r, g, b,50);
   rect(mouseX, mouseY, 10, 10);
 
+}
+
+function windowResized() {
+   resizeCanvas(windowWidth, windowHeight);
 }
