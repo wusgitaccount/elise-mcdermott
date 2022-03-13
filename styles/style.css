@@ -24,11 +24,10 @@ a:visited {
   font-size: 30px;
   color: blue;
   width: 10%;
-  height: 100%;
-  transition: width 2s, height 2s, transform 2s;
-  padding-left: 20%;
-  padding-top: 5%;
-  position: relative;
+  height: 10%;
+  margin-left: 20%;
+  margin-top: 5%;
+  position: fixed;
 }
 
 .contents{
@@ -36,10 +35,14 @@ a:visited {
   font-size: 20px;
   color: black;
   width: 60%;
-  height: 100%;
-  float: right;
+  height: 50%;
+  float: left;
   padding: 5%;
-  position: relative;
+  position: absolute;
+  overflow: scroll;
+  right: 0%;
+  overflow-x:hidden;
+
 }
 
 .footer {
@@ -68,3 +71,60 @@ a:visited {
 .hover-nav:hover{
   text-decoration: underline;
 }
+
+#gallerywrapper {
+     width:640px;
+     height:450px;
+     margin:0 auto;
+     position:relative;
+ }
+
+ #gallerywrapper #gallery {
+     position:absolute;
+     left:0;
+     top:0;
+     height:450px;
+     width:640px;
+     overflow:hidden;
+     text-align:center;
+ }
+
+ #gallerywrapper #gallery div {
+     width:640px; height:900px;
+     padding-top:10px;
+     position:relative;
+ }
+
+ #gallerywrapper #gallery div img {
+     clear:both;
+     display:block;
+     margin:0 auto;
+     border:0;
+ }
+
+ #gallerywrapper #gallery div h3 {
+     padding:10px 0 0 0;
+     margin:0;
+     font-size:18px;
+ }
+
+ #gallerywrapper #gallery div p {
+     padding:5px 0;
+     margin:0;
+     font-size:12px;
+     line-height:18px;
+ }
+
+ #gallery .previous{
+     display:inline;
+     float:left;
+     margin-left:80px;
+     text-decoration:none;
+ }
+
+ #gallery .next{
+     display:inline;
+     float:right;
+     margin-right:80px;
+     text-decoration:none;
+ }
