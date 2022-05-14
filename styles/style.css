@@ -136,3 +136,12 @@ a:visited {
       left: 70%;
       position: relative;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
