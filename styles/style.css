@@ -30,7 +30,18 @@ a:visited {
   margin-top: 5%;
   position: fixed;
 }
-
+.preface{
+  font-family: Helvetica;
+  font-size: 20px;
+  color: black;
+  width: 70%;
+  height: 60%;
+  float: left;
+  padding: 5%;
+  position: absolute;
+  overflow: scroll;
+  right: 0%;
+}
 .contents{
   font-family: Helvetica;
   font-size: 20px;
@@ -203,14 +214,15 @@ a:visited {
 
         .preface{
           font-family: Helvetica;
-          font-size: 12px;
-          color: black;
-          height: 75%;
+              font-size: 12px;
+              color: black;
+              height: 75%;
+              position: absolute;
+              overflow: scroll;
+              padding: 10px;
+              top: 10%;
+              right:30px;
 
-          position: absolute;
-          overflow: scroll;
-          padding: 10px;
-          top: 10%;
         }
 
         .footer {
