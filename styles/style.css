@@ -67,7 +67,6 @@
               padding: 10px;
               top: 10%;
               right:30px;
-
         }
 
         .footer {
@@ -108,7 +107,6 @@
              height:450px;
              margin:0 auto;
              position:relative;
-
          }
 
          #gallerywrapper #gallery {
@@ -203,7 +201,7 @@
         .container {
           width: 100%;
           height: 100%;
-                }
+        }
 
         .hover-nav{
           font-size: 30px;
@@ -395,11 +393,6 @@
           margin-top: 5%;
 
         }
-        .contact{
-          width: 100%;
-          margin-left: 10%;
-          margin-top: 12%;
-        }
 
         .contents{
           font-family: Helvetica;
@@ -411,7 +404,7 @@
           overflow: scroll;
           padding: 10px;
           overflow-x: hidden;
-          top: 0%;
+          top: 10%;
         }
 
         .preface {
@@ -421,8 +414,8 @@
           height: 75%;
           position: absolute;
           overflow: scroll;
-          left: 18%;
-          top: 0%;
+          left: 10%;
+          top: 10%;
         }
 
         .footer {
@@ -529,6 +522,176 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  body {
+    font-family: 'Syne Mono', monospace;
+    margin: 0;
+  }
+
+  html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header{
+    width: 100%;
+    position: fixed;
+  }
+
+  .hover-nav:hover{
+    text-decoration: underline;
+  }
+
+  .hover-nav{
+    font-size: 30px;
+    color: blue;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+  }
+
+  .contents{
+    font-family: Helvetica;
+    font-size: 12px;
+    color: black;
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    overflow: scroll;
+    padding: 10px;
+    overflow-x: hidden;
+    top: 15%;
+  }
+
+  .preface {
+    font-family: Helvetica;
+    font-size: 12px;
+    color: black;
+    height: 75%;
+    position: absolute;
+    overflow: scroll;
+    left: 10%;
+    top: 15%;
+  }
+
+  .footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr;
+    left: 15%;
+    grid-gap: 10%;
+    bottom: 3%;
+    z-index: 4;
+    font-size: 15px;
+    position: fixed;
+    color: black;
+  }
+  .footer-grid {
+    width: 100%;
+    text-align: left;
+  }
+
+  .footer-grid:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .selectedworks {
+        font-size: 15px;
+        width:30%;
+        position: absolute;
+        z-index: 5;
+        float: right;
+        margin-left: 5%;
+        left: 60%;
+      }
+
+  #gallerywrapper {
+       width:70%;
+       left: 5%;
+       height:450px;
+       margin:0 auto;
+       position:absolute;
+
+   }
+
+   #gallerywrapper #gallery {
+       position:relative;
+       left:0;
+       top:0;
+       height:800px;
+       width:80%;
+       overflow: auto;
+       text-align:center;
+       float: left;
+       overflow-x: hidden; /* Hide horizontal scrollbar */
+   }
+
+   #gallerywrapper #gallery div {
+     max-width: 100%;
+     height: auto;
+     padding-top:10px;
+   }
+
+   #gallerywrapper #gallery div img {
+     max-width: 100%;
+     height: auto;
+       clear:both;
+       display:block;
+       margin:0 auto;
+       border:0;
+   }
+
+   #gallerywrapper #gallery div h3 {
+       padding:10px 0 0 0;
+       margin:0;
+       font-size:18px;
+   }
+
+   #gallerywrapper #gallery div p {
+       padding:5px 0;
+       margin:0;
+       font-size:12px;
+       line-height:18px;
+   }
+
+   #gallery .previous{
+       display:inline;
+       float:left;
+       margin-left:80px;
+       text-decoration:none;
+   }
+
+   #gallery .next{
+       display:inline;
+       float:right;
+       margin-right:80px;
+       text-decoration:none;
+   }
+
+  .titles:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
       body {
         font-family: 'Syne Mono', monospace;
         margin: 0;
@@ -571,7 +734,8 @@
         padding: 5%;
         position: absolute;
         overflow: scroll;
-        right: 0%;
+        left: 20%;
+        top: 0%;
       }
       .contents{
         font-family: Helvetica;
@@ -583,10 +747,10 @@
         padding: 5%;
         position: absolute;
         overflow: scroll;
-        right: 0%;
+        left: 20%;
         overflow-x:hidden;
+        top: 0%;
       }
-
 
       .footer {
         display: grid;
@@ -686,6 +850,3 @@
         text-decoration: underline;
       }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
